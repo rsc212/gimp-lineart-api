@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 # Install GIMP and Python
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-      gimp gimp-python python3 python3-pip \
+      gimp python3 python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
